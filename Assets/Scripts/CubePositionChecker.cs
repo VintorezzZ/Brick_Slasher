@@ -6,7 +6,7 @@ public class CubePositionChecker : MonoBehaviour
 {
     public delegate void CubeIsDead(GameObject cube);
     public static event CubeIsDead cubeIsDead;
-    private bool died = false;
+    private bool died;
     void Start()
     {
         

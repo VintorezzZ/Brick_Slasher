@@ -20,9 +20,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CubePositionChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CubePositionChecker.cs" />
       </list>
     </option>
   </component>
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610442060106</updated>
       <workItem from="1610442065676" duration="18611000" />
-      <workItem from="1610524092415" duration="13123000" />
+      <workItem from="1610524092415" duration="14386000" />
     </task>
     <servers />
   </component>
