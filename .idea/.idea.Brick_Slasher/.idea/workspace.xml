@@ -23,7 +23,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ParabolaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroyer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubePositionChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelProgressHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
@@ -31,6 +30,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Facebook/FacebookManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
       </list>
     </option>
   </component>
@@ -80,6 +80,7 @@
       <workItem from="1610615539537" duration="647000" />
       <workItem from="1610623400193" duration="2164000" />
       <workItem from="1610627934044" duration="148000" />
+      <workItem from="1610629857921" duration="1844000" />
     </task>
     <servers />
   </component>

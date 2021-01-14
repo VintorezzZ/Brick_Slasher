@@ -15,9 +15,12 @@ MonoBehaviour:
   selectedAppIndex: 0
   clientTokens:
   - 
+  - 
   appIds:
   - 750653025463573
+  - 847262269341003
   appLabels:
+  - Brick Slasher
   - Brick Slasher
   cookie: 1
   logging: 1
@@ -27,6 +30,7 @@ MonoBehaviour:
   androidKeystorePath: 
   iosURLSuffix: 
   appLinkSchemes:
+  - list: []
   - list: []
   uploadAccessToken: 
   autoLogAppEventsEnabled: 1

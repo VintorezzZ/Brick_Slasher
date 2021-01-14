@@ -27,6 +27,7 @@ public class Bullet : MonoBehaviour
             if (other.gameObject.TryGetComponent(out Rigidbody rb))
             {
                 rb.AddExplosionForce(explosionForce, transform.position, 1, 1);
+                explosionForce = 0;
             }
         }
     }
