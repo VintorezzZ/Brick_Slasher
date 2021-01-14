@@ -28,8 +28,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelProgressHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Facebook/FacebookManager.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +76,10 @@
       <updated>1610442060106</updated>
       <workItem from="1610442065676" duration="18611000" />
       <workItem from="1610524092415" duration="14386000" />
-      <workItem from="1610604126265" duration="8239000" />
+      <workItem from="1610604126265" duration="8838000" />
+      <workItem from="1610615539537" duration="647000" />
+      <workItem from="1610623400193" duration="2164000" />
+      <workItem from="1610627934044" duration="148000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject canvasPrefab;
     [SerializeField] private GameObject uiManagerPrefab;
     [SerializeField] private GameObject poolPrefab;
+    [SerializeField] private GameObject FbManagerPrefab;
 
     public static int Level = 1;
 
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
         Instantiate(canvasPrefab, transform.position, Quaternion.identity);
         Instantiate(uiManagerPrefab, transform.position, Quaternion.identity);
         Instantiate(poolPrefab, transform.position, Quaternion.identity);
+        Instantiate(FbManagerPrefab, transform.position, Quaternion.identity);
     }
 
     private void AddBulletsAccordingLevelNumber()
@@ -84,7 +86,11 @@ public class GameManager : MonoBehaviour
     private IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(2);
+        
+        FacebookManager.instance.LevelPassed(Level);
+        
         Level++;
+        
         if (Level > SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(0);

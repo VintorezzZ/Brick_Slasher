@@ -46,5 +46,6 @@ MonoBehaviour:
   canvasPrefab: {fileID: 5017105652613511829, guid: d68acd8a71a250f4b8b466660fdb7761, type: 3}
   uiManagerPrefab: {fileID: 2576370518137722653, guid: 241be71de3ab59341a048c945d564678, type: 3}
   poolPrefab: {fileID: 8489937689458744101, guid: 2899153cd0c167b4e8c775a5805b40d5, type: 3}
+  FbManagerPrefab: {fileID: 4738681301338644228, guid: 6c0b7eaf5e7b2fc469384d1923ab0222, type: 3}
   bulletsCount: 0
   cubesToDestroyList: []
