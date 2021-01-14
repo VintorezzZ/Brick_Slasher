@@ -10,9 +10,12 @@ public class Cannon : MonoBehaviour
     [SerializeField] private LayerMask shootableLayer;
     private GameObject _instantiatedBullet;
 
+    public delegate void OnShoot();
+    public static event OnShoot onShoot;
+
     public delegate void NoMoreBullets();
     public static event NoMoreBullets noMoreBullets;
-    
+
     private void Awake()
     {
         _camera = Camera.main;
@@ -50,6 +53,7 @@ public class Cannon : MonoBehaviour
             bullet.SetActive(true);
             Pool.singleton.pooledItems.Remove(bullet);
             
+            onShoot?.Invoke();
             CheckForAmmo();
             
             if (bullet.TryGetComponent(out ParabolaController parabolaController))

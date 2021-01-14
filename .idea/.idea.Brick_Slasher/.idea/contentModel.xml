@@ -10,8 +10,10 @@
           <e p="CubePositionChecker.cs" t="Include" />
           <e p="Destroyer.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="LevelProgressHandler.cs" t="Include" />
           <e p="ParabolaController.cs" t="Include" />
           <e p="Pool.cs" t="Include" />
+          <e p="UiManager.cs" t="Include" />
         </e>
       </e>
       <e p="Brick_Slasher.sln" t="IncludeFlat" />

@@ -6,24 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    //public static GameManager singleton;
+    [SerializeField] private GameObject canvasPrefab;
+    [SerializeField] private GameObject uiManagerPrefab;
+    [SerializeField] private GameObject poolPrefab;
 
-    private static int _level = 1;
-    private int bulletsCount;
-    private bool haveBullets = true;
-    [SerializeField] private List<GameObject> cubesToDestroyList;
+    public static int Level = 1;
+
+    [HideInInspector]
+    public int bulletsCount;
+    private bool _haveBullets = true;
+
+    [HideInInspector]
+    public List<GameObject> cubesToDestroyList;
 
     private void Awake()
     {
-        _level = SceneManager.GetActiveScene().buildIndex + 1;
+        SpawnManagers();
+
+        Level = SceneManager.GetActiveScene().buildIndex + 1;
 
         AddBulletsAccordingLevelNumber();
-    }
-
-    private void AddBulletsAccordingLevelNumber()
-    {
-        Pool.singleton.items[0].amount = 3 * _level;
-        bulletsCount = Pool.singleton.items[0].amount;
+        
+        FindAllTargets();
     }
 
     private void OnEnable()
@@ -42,9 +46,17 @@ public class GameManager : MonoBehaviour
         Bullet.onBulletDestroyed -= CheckForWinOrGameOver;
     }
 
-    void Start()
+    private void SpawnManagers()
     {
-        FindAllTargets();
+        Instantiate(canvasPrefab, transform.position, Quaternion.identity);
+        Instantiate(uiManagerPrefab, transform.position, Quaternion.identity);
+        Instantiate(poolPrefab, transform.position, Quaternion.identity);
+    }
+
+    private void AddBulletsAccordingLevelNumber()
+    {
+        Pool.singleton.items[0].amount = 3 * Level;
+        bulletsCount = Pool.singleton.items[0].amount;
     }
 
     private void FindAllTargets()
@@ -67,19 +79,19 @@ public class GameManager : MonoBehaviour
     private IEnumerator ReloadScene()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(_level - 1);
+        SceneManager.LoadScene(Level - 1);
     }
     private IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(2);
-        _level++;
-        if (_level > SceneManager.sceneCountInBuildSettings)
+        Level++;
+        if (Level > SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(0);
         }
         else
         {
-            SceneManager.LoadScene(_level - 1);
+            SceneManager.LoadScene(Level - 1);
         }
     }
 
@@ -97,7 +109,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (!haveBullets && CheckIfCubeIsNotMoving())
+            if (!_haveBullets && CheckIfCubeIsNotMoving())
             {
                 GameOver();
             }
@@ -125,6 +137,6 @@ public class GameManager : MonoBehaviour
 
     void ChangeHaveBulletsFlag()
     {
-        haveBullets = false;
+        _haveBullets = false;
     }
 }

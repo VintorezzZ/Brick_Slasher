@@ -7,22 +7,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubePositionChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cannon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelProgressHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ParabolaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletDestroyer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroyer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubePositionChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelProgressHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UiManager.cs" />
       </list>
     </option>
   </component>
@@ -68,6 +75,7 @@
       <updated>1610442060106</updated>
       <workItem from="1610442065676" duration="18611000" />
       <workItem from="1610524092415" duration="14386000" />
+      <workItem from="1610604126265" duration="8239000" />
     </task>
     <servers />
   </component>
