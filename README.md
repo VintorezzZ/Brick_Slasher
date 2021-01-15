@@ -1,4 +1,4 @@
 # Brick_Slasher
  
-![alt text](screenshots/BrickSlasher.png "Описание будет тут")
+![alt text](screenshots/BrickSlasher.jpg "Описание будет тут")
 
